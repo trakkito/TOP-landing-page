@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "Agmena";
+    src: url(fonts/agmena-pro-regular.ttf);
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    font-family: "Agmena", sans-serif;
+    margin: 0;
+    background-image: url(images/elden-page-background.jpg);
+    padding-bottom: 800px;
+    text-shadow: 2px 2px 1px black;
+}
+
+.header-container {
+    width: 100vw;
+    display: flex;
+    height: 60px;
+    background-color: black;
+    color: #F9FAF8;
+    font-family: "nunito", sans-serif;
+    z-index: 1000;
+    position: fixed;
+    top: 0px;
+}
+
+.left-header {
+    flex: 2;
+    margin-right: 28vw;
+    margin-left: 300px;
+}
+
+.header-logo {
+    width: 150px;
+    height: 55px;
+}
+
+.right-header {
+    display: flex;
+    flex: 1;
+    margin-top: 18px;
+}
+
+.header-link-one, .header-link-two {
+    margin-right: 15px;
+}
+
+.intro {
+    height: 300px;
+    width: 100vw;
+    margin-top: 30px;
+    padding-top: 45px;
+}
+
+.product-intro {
+    width: 75vw;
+    height: 280px;
+    color: #F9FAF8;
+    display: flex;
+    margin: 0 auto;
+    justify-content: end;
+}
+
+.product-intro-text {
+    height: 280px;
+    width: 375px;
+    color: #F9FAF8;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: end;
+    margin-right: 15px;
+    text-shadow: 2px 2px 1px black;
+}
+
+.product-intro-title {
+    font-weight: 700;
+    font-size: 60px;
+    width: 325px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.product-intro-description {
+    font-weight: 500;
+    font-size: 15px;
+    width: 525px;
+    font-family: "Nunito Sans", sans-serif;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.product-intro-button {
+    margin-top: 10px;
+}
+
+.intro-signup-button {
+    background-color: #c19d53;
+    border: 1px solid #1e244d;
+    color: #F9FAF8;
+    border: none;
+    border-radius: 7px;
+    padding: 6px 20px;
+    font-size: 12px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.intro-image {
+    height: 250px;
+    border-radius: 12px;
+}
+
+.snapshots {
+    background-image: url(images/erdtree-background-key-feature-2.png);
+    display: flex;
+    width: 100vw;
+    height: 1140px;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+h1 {
+    text-align: center;
+    color: #F9FAF8;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    width: 100vw;
+    font-size: 60px;
+}
+
+.snapshot-one, .snapshot-two, .snapshot-three, .snapshot-four {
+    flex: 1;
+    height: 275px;
+    margin: 0 80px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+    align-items: center;
+    color: #F9FAF8;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.snapshot-pic {
+    height: 250px;
+    margin-bottom: 0;
+}
