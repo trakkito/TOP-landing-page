@@ -3,6 +3,10 @@
     src: url(fonts/agmena-pro-regular.ttf);
 }
 
+a {
+    margin: 0;
+}
+
 p {
     margin: 0;
 }
@@ -10,10 +14,11 @@ p {
 body {
     font-family: "Agmena", sans-serif;
     margin: 0;
-    background-image: url(images/elden-page-background.jpg);
-    padding-bottom: 800px;
     text-shadow: 2px 2px 1px black;
+    background-image: url(images/elden-page-background.jpg);
+    background-attachment: fixed;
 }
+
 
 .header-container {
     width: 100vw;
@@ -30,7 +35,7 @@ body {
 .left-header {
     flex: 2;
     margin-right: 28vw;
-    margin-left: 300px;
+    margin-left: 13vw;
 }
 
 .header-logo {
@@ -41,12 +46,24 @@ body {
 .right-header {
     display: flex;
     flex: 1;
-    margin-top: 18px;
+    text-align: center;
+    margin-right: 20px;;
 }
 
-.header-link-one, .header-link-two {
-    margin-right: 15px;
+.header-link-one:hover, .header-link-two:hover, .header-link-three:hover {
+    background-color: rgb(43, 43, 43);
 }
+
+.header-link {
+    color: #F9FAF8;
+    text-decoration: none;
+}
+
+.header-link-one, .header-link-two, .header-link-three {
+    margin: auto 10px;
+    padding: 19px 5px;
+}
+
 
 .intro {
     height: 300px;
@@ -106,6 +123,12 @@ body {
     padding: 6px 20px;
     font-size: 12px;
     font-family: "Nunito Sans", sans-serif;
+    transition: background-color .15s;
+}
+
+.intro-signup-button:hover {
+    background-color: #ab822f;
+    cursor: pointer;
 }
 
 .intro-image {
@@ -113,13 +136,22 @@ body {
     border-radius: 12px;
 }
 
+.snapshots-container {
+    display: flex;
+    width: 100vw;
+    height: 500px;
+    justify-content: center;
+    padding-top: 35px;
+}
+
 .snapshots {
     background-image: url(images/erdtree-background-key-feature-2.png);
     display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 1140px;
     justify-content: center;
-    padding-top: 60px;
+    padding-top: 35px;
 }
 
 h1 {
@@ -142,7 +174,7 @@ h1 {
     text-align: center;
     align-items: center;
     color: #F9FAF8;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 20px;
 }
 
@@ -150,3 +182,99 @@ h1 {
     height: 250px;
     margin-bottom: 0;
 }
+
+
+.quote-container {
+    width: 70vw;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    color: #F9FAF8;
+    margin: 0 auto;
+}
+
+.quote p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 50px;
+    font-style: italic;
+}
+
+.quote-author p {
+    text-align: center;
+    font-family: "Nunito sans", sans-serif;
+    font-weight: 700;
+}
+
+.sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-up-container {
+    width: 70vw;
+    height: 150px;
+    background-color: #c19d53;
+    border: 1px solid #1e244d;
+    margin-top: 25px;
+    border-radius: 12px;
+    display: flex;
+    color: #F9FAF8;
+}
+
+.sign-up-text {
+    display: flex;
+    flex-direction: column;
+    margin: auto 80px;
+}
+
+.sign-up-title {
+    font-size: xx-large;
+    font-weight: 600
+}
+
+.sign-up-description {
+    font-size: 12px;
+    font-family: "Nunito Sans", sans-serif;
+    text-shadow: 1px 1px 1px black;
+}
+
+.sign-up-button {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.bottom-signup {
+    background-color: #c19d53;
+    border: 2px solid #F9FAF8;
+    color: #F9FAF8;
+    border-radius: 7px;
+    padding: 6px 20px;
+    font-size: 24px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 500;
+    transition: all 0.15s;
+}
+
+.bottom-signup:hover {
+    background-color: #F9FAF8;
+    border: 2px solid #F9FAF8;
+    color: #c19d53;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #c16d53;
+    color: #F9FAF8;
+    margin-top: 80px;
+    margin-bottom: 0;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    height: 45px;
+    padding-top: 20px;
+}
+
